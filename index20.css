@@ -1,0 +1,105 @@
+html,body{ margin:0; padding:0; width:100%; height:100%;}
+.box{ width:100%; height:100%; position:relative; color:#ffffff; font-size:24pt;}
+
+body{
+    -ms-overflow-style: none;
+    }
+    
+   ::-webkit-scrollbar {
+     display: none;
+
+   }
+
+
+
+
+   .embed-container .swiper-slide {
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+}
+.embed-container {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.swiper-button-prev {
+    position: relative !important;
+    top: calc(100vh / 2) !important;
+    left: var(--swiper-navigation-sides-offset,50px) !important;
+    margin-top: 0px !important;
+}
+
+
+.swiper-button-next {
+    position: relative !important;
+    top: calc(100vh / 2) !important;
+    left: calc(100vw - 72px) !important;
+    z-index: 100 !important;
+    margin-top: -44px !important;
+}
+
+
+.swiper-pagination {
+    position: relative !important;
+    top: calc(100vh - 70px) !important;
+}
+
+
+
+.swiper-scrollbar {
+    display: none !important;
+}
+
+/* 버튼 색상 */
+:root {
+    --swiper-theme-color: #fff !important ;
+}
+
+
+
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    filter: brightness(80%)
+}
+
+
+/* 모바일 수평 스크롤 금지 */ 
+
+body { 
+    overflow-x: hidden; 
+    width: 100%; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+    }
+
+
+
+
+
+
+/* ~~~~~~~~ 1024px 이하 ~~~~~~~~ */
+
+@media (max-width: 1024px) {
+
+    .swiper-button-prev, .swiper-button-next {
+    display: none !important;
+}
+}   

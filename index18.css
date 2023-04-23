@@ -1,0 +1,367 @@
+.bebas {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.suit {
+    font-family: 'SUIT', sans-serif;;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.header-title {
+    color: #fff;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    width: calc(100vw - 124px);
+    padding: 24px  62px;
+    justify-content: space-between;
+}
+
+
+
+.header-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.header-jyp {
+    font-size: 3rem;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+.header-ent {
+    display: flex;
+    font-size: 0.6rem;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.header-menu-icon {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-menu-icon > span {
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0px;
+    
+    
+}
+
+.sns-icon {
+    display: flex;
+}
+
+
+.youtube-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.insta-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.twitter-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.facebook-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 120px;
+}
+
+
+.footer {
+    display: flex;
+    position: relative;
+    z-index: 100;
+    color: #fff;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100vw - 124px);
+    padding: 24px  62px;
+    top: calc(100vh - 180px);
+}
+
+
+.song-title {
+    z-index: 100;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+
+}
+
+.song-title-singer {
+    font-size: 1.5rem;
+
+}
+
+.song-title-title {
+    font-size: 4rem;
+
+}
+
+
+.new-release {
+    background-color: #111;
+    display: flex;
+    width: 100vw;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+box-sizing: border-box;
+padding: 111px 50px 50px 50px;
+
+
+
+
+}
+
+.new-album {
+
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: row;
+    margin: 6px;
+    background-color: #FFF;
+    border-radius: 12px; 
+    height: 48%;
+}
+
+
+
+
+
+.new-album-photo {
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 12px 0px 0px 12px;
+
+
+}
+
+.new-album-photo::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+
+.new-album-info {
+    width: 50%;
+    font-size: 1rem;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.new-album-info-singer {
+    font-size: 1.2rem;
+}
+
+.new-album-info-title {
+    font-size: 2rem;
+}
+
+
+.new-album-info-relese-date {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.new-album-info-info{
+    font-size: 0.8rem;
+}
+
+
+.new-album-info-tc {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-album-info-tc-tc {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ~~~~~~~~ 1024px 이하 ~~~~~~~~ */
+
+@media (max-width: 1024px) {
+
+    .header-title {
+        width: calc(100vw - 40px);
+        padding: 16px 20px;
+
+    }
+
+    .header-jyp {
+        font-size: 2rem;
+    }
+
+
+    .header-ent {
+        font-size: 0.3rem;
+        padding-left: 8px;
+    }
+
+    .song-title-singer {
+        font-size: 1rem;
+    
+    }
+    
+    .song-title-title {
+        font-size: 2.5rem;
+    
+    }
+
+
+    .header-menu-icon > span {
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        margin: 2px 0px;
+        
+        
+    }
+
+    .sns-icon {
+        display: none;
+    }
+    
+
+
+    .footer {
+        display: none;
+    }  
+
+
+    
+
+    .new-release {
+        padding: 110px 12px 12px 12px;
+        }
+
+
+        .new-album {
+    
+            flex: 1 1 50%;
+            height: 23%;
+    
+        }
+    
+    
+        .new-album-photo {
+            width: 30%;
+    
+        }
+    
+        .new-album-info {
+            width: 70%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+
+}
+
+
+/* ~~~~~~~~ 768px 이하 ~~~~~~~~ */
+
+@media (max-width: 768px) {
+
+  
+
+
+    .new-release {
+    padding: 73px 12px 12px 12px;
+    }
+
+
+    .new-album {
+
+        flex: 1 1 50%;
+        height: 23%;
+
+    }
+
+
+    .new-album-photo {
+        width: 30%;
+
+    }
+
+    .new-album-info {
+        width: 70%;
+        padding: 10px;
+        display: block;
+    }
+
+
+    .new-album-info-singer {
+        font-size: 1rem;
+    }
+    
+    .new-album-info-title {
+        font-size: 2rem;
+    }
+    
+    
+    .new-album-info-relese-date {
+        font-size: 0.8rem;
+        color: #999;
+    }
+    
+    .new-album-info-info{
+        display: none;
+    }
+
+    .new-album-info-tc {
+        height: 100%;
+        justify-content: space-between;
+    }
+
+
+}   
